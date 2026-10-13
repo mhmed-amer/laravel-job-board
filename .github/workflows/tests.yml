@@ -14,6 +14,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
+      APP_ENV: testing
       DB_CONNECTION: sqlite
       DB_DATABASE: ${{ github.workspace }}/database/database.sqlite
 
