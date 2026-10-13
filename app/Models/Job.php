@@ -6,6 +6,9 @@ namespace App\Models;
 
 class Job
 {
+    /**
+     * @return array<int, array<string, mixed>>
+     */
     public static function all(): array
     {
         return [
