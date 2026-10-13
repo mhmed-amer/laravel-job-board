@@ -11,4 +11,4 @@ Route::middleware(['auth', 'verified'])->group(function () {
 
 require __DIR__.'/settings.php';
 
-Route::get('/job',[JobController::class,'index']);
+Route::get('/job', [JobController::class, 'index']);
