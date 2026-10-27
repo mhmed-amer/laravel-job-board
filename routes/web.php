@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\IndexController;
 use App\Http\Controllers\JobController;
 use Illuminate\Support\Facades\Route;
 
@@ -11,4 +12,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
 
 require __DIR__.'/settings.php';
 
-Route::get('/job', [JobController::class, 'index']);
+// Route::get('/', [IndexController::class, 'index']);
+Route::get('/about', [IndexController::class, 'about']);
+Route::get('/contact', [IndexController::class, 'contact']);
+Route::get('/index', [JobController::class, 'index']);
